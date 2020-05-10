@@ -10,7 +10,7 @@ To extract python functions from jupyter please run "make all" in the root folde
 
 ```bash
 # Example usage (natively): 
-$ pip install -r requirements.txt
+$ make all
 $ python batch.py -i parts_vehicles/ -s results.json -f
 $ python batch.py -i few_images/ -s results_small.json -f
 ```
