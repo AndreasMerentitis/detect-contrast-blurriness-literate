@@ -11,8 +11,10 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-from blur_detection.detection import (check_contrast, estimate_blur,
+from code_nbdev.export import (check_contrast, estimate_blur,
                                       fix_image_size)
+
+
 
 
 def find_images(input_dir):
@@ -93,6 +95,7 @@ if __name__ == '__main__':
     autopct='%1.1f%%', shadow=True, startangle=140)
     plt.axis('equal')
     plt.savefig('bluriness_pie.png')
+    plt.clf()
 
     labels = 'Low contrast', 'OK contrast'
     sizes = [count_low_contrast_images, count_total_images-count_low_contrast_images]

@@ -1,8 +1,11 @@
 install_deps:
 	pip install -U -r requirements.txt
 
-install:
-	pip install ./
+all:
+	pip install -U -r requirements.txt
+	cd getiquality
+	nbdev_build_lib
+	cd ..
 
 test:
 	py.test
