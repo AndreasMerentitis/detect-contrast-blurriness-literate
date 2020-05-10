@@ -1,6 +1,12 @@
-# Detect image quality (literate programming versions)
+# Detect image quality (literate programming version)
 
 The goal is to detect if an image (or group of images) is blurry or has low contrast and store the result in a json file
+
+This repository is using nbdev, a library that allows fully developing a library in Jupyter Notebooks, putting all your code, 
+tests and documentation in one place. That is: you now have a true literate programming environment, as envisioned by Donald 
+Knuth back in 1983!
+
+To extract python functions from jupyter please run "make all" in the root folder.
 
 ```bash
 # Example usage (natively): 
